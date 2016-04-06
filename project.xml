@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta
+		title="openfl-renderer-tests"
+		package="org.openfl.tests.openfl-renderer-tests"
+		version="0.0.0"
+		company="OpenFL"
+		/>
+
+	<app main="Main" path="Export" file="Main" />
+
+	<window width="256" height="256" resizable="false" vsync="true" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	
+</project>
