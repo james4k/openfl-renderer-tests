@@ -146,7 +146,4 @@ class Tests {
 	}
 
 
-	// TODO: same scrollRect tests as above for Bitmap children
-
-
 }
