@@ -60,7 +60,11 @@ class Main extends Sprite {
 				ctx.readPixels (0, 0, 256, 256, GL.RGBA, GL.UNSIGNED_BYTE, image.buffer.data);
 				transformOpenGLImage (image);
 
-			//case CONSOLE(ctx):
+			#if lime_console
+			case CONSOLE(ctx):
+				var dest = cpp.Pointer.arrayElem (image.buffer.data.buffer.getData (), 0);
+				ctx.debugReadFrameBuffer (cast dest, 256, 256);
+			#end
 
 			default:
 				throw "renderer type not yet supported";
