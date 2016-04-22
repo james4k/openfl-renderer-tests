@@ -60,7 +60,7 @@ class Tests {
 		
 		var C = 0x99ff0400;
 
-		var child = new Bitmap (new BitmapData (110, 110, false, C >> 8));
+		var child = new Bitmap (new BitmapData (120, 120, false, C >> 8));
 		child.x = -10;
 		child.y = -10;
 
@@ -120,7 +120,7 @@ class Tests {
 	
 		var child = new Sprite ();
 		child.graphics.beginFill (C >> 8);
-		child.graphics.drawRect (-10, -10, 110, 110);
+		child.graphics.drawRect (-10, -10, 120, 120);
 
 		sprite.x = 10;
 		sprite.y = 10;
